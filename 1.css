@@ -1,0 +1,125 @@
+/* 全域預設重設，防止邊距干擾 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 頂部標題區 */
+H1 {
+    width: 80%;
+    height: 65px;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+H1 img {
+    height: 65px; /* 確保所有 logo 圖片高度一致 */
+}
+
+/* 跑馬燈外框 */
+.a1 {
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 300px; /* 讓跑馬燈文字垂直置中 */
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* 跑馬燈文字動態效果 */
+.box {
+    display: inline-block;
+    padding-left: 100%;
+    color: #FF0000; /* 檢定標準紅字 */
+    font-weight: bold;
+    animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* 中間大外框：保持 Flex 預設等高特性 */
+.t1 {
+    width: 80%;
+    margin: auto;
+    display: flex; 
+}
+
+/* 左欄選單區 */
+.c1 {
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 社團介紹按鈕背景與高度修正 */
+.c3 {
+    background-image: url('./17300-104301/menu1.png');
+    margin-top: 10px;
+    height: 35px;
+    line-height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.c3 a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+/* 最近更新日期：自動吸附最底部 */
+.c4 {
+    border: 1px solid black;
+    margin-top: auto; 
+    padding: 5px 0;
+}
+
+/* 右欄內容區 */
+.c2 {
+    width: 85%;
+    border: 1px solid black;
+}
+
+/* 右欄下方主內文區：精確計算高度 */
+.a2 {
+    height: 585px; /* 585px + 跑馬燈 30px = 總高 615px */
+    border: 1px solid black;
+    text-align: center;
+    background-image: url('./17300-104301/0101.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    padding-top: 20px;
+}
+
+/* 右欄內文文字設定：變粗、斜體、藍字、標楷體 */
+.a2 p {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "標楷體", "DFKai-SB", "BiauKai", sans-serif;
+    color: #0000FF;
+    line-height: 1.8;
+}
+
+/* 頁尾區 */
+footer {
+    width: 80%;
+    border: 1.5px solid black;
+    text-align: center;
+    margin: auto;
+    padding: 10px 0;
+}
+

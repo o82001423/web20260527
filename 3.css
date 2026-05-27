@@ -1,0 +1,76 @@
+/* 全域預設重設，防止邊距干擾 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 18px;
+    color: red;
+    margin-top: auto;
+    justify-content: center;
+    text-align: center;
+}
+.c1{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    /* flex */
+    display: flex;
+    /* 宣告flex */
+    /* justify-content: space-around; */
+    /* 水平分散 */
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+    /* 垂直置中 */
+   
+}
+.t1{
+    width: 33.3%;
+    text-align: center; 
+}
+.t2{
+    width: 33.3%;
+    text-align: center;
+}
+.t3{
+    width: 33.3%;
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    color: #673abb;
+    padding-left: 50px;
+}
+
+.c2{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+ 
+    align-items: center;
+}
+.t01{
+    width: 33.3%;
+    text-align: center; 
+}
+.t02{
+    width: 33.3%;
+    text-align: center;
+}
+.t03{
+    width: 33.3%;
+    text-align: center;
+}
+.t04{
+    width: 33.3%;
+    text-align: center;
+}
+
+body{
+    background-image: url(./17300-104301/0101.jpg);
+}
